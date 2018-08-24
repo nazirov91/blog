@@ -5,6 +5,8 @@ import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import Content, { HTMLContent } from '../components/Content'
 
+import "katex/dist/katex.min.css"
+
 export const BlogPostTemplate = ({
   content,
   contentComponent,
