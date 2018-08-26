@@ -29,7 +29,7 @@ const Navbar = () => (
       <div className="navbar-end">
         <a
           className="navbar-item"
-          href="https://github.com/nazirov91"
+          href="https://github.com/nazirov91/blog"
           target="_blank"
           rel="noopener noreferrer"
         >
