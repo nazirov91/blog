@@ -104,6 +104,7 @@ $$
 $$
 
 *Proof*
+
 |||
 |-|-|
 |$\exists x(R(x) \land T(x))$ | Hypothesis (There is a movie directed by Robert and that is about time)|
