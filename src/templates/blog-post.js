@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { kebabCase } from 'lodash'
 import {Helmet} from 'react-helmet'
 import Link from 'gatsby-link'
+import { DiscussionEmbed } from "disqus-react";
 import Content, { HTMLContent } from '../components/Content'
 
 import "katex/dist/katex.min.css"
@@ -45,7 +46,7 @@ export const BlogPostTemplate = ({
       </div>
     </section>
   )
-}
+} 
 
 BlogPostTemplate.propTypes = {
   content: PropTypes.string.isRequired,
@@ -55,19 +56,44 @@ BlogPostTemplate.propTypes = {
   helmet: PropTypes.instanceOf(Helmet),
 }
 
-const BlogPost = ({ data }) => {
-  const { markdownRemark: post } = data
 
-  return (
-    <BlogPostTemplate
-      content={post.html}
-      contentComponent={HTMLContent}
-      description={post.frontmatter.description}
-      helmet={<Helmet title={`${post.frontmatter.title} | Blog`} />}
-      tags={post.frontmatter.tags}
-      title={post.frontmatter.title}
-    />
-  )
+class BlogPost extends React.PureComponent {
+  constructor(props){
+    super(props);
+  }
+
+  render(){
+
+    const { markdownRemark: post } = this.props.data;
+
+    const siteTitle = post.frontmatter.title;
+    const { previous, next } = this.props.pathContext;
+    const disqusShortname = "https-blog-sardor-io";
+    const disqusConfig = {
+      identifier: post.id,
+      title: post.frontmatter.title,
+    };
+
+    return(
+      <div>
+        <BlogPostTemplate
+          content={post.html}
+          contentComponent={HTMLContent}
+          description={post.frontmatter.description}
+          helmet={<Helmet title={`${post.frontmatter.title} | Blog`} />}
+          tags={post.frontmatter.tags}
+          title={post.frontmatter.title}
+        />
+        <div className="container content disqus-div">
+          <div className="columns">
+            <div className="column is-10 is-offset-1">
+              <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />  
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
 
 BlogPost.propTypes = {
