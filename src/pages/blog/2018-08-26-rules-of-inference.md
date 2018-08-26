@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: Rules of Inference
+title: Rules of Inference (Discrete Math)
 date: '2018-08-26T10:46:58-04:00'
 description: Rules of Inference (Discrete Math)
 tags:
