@@ -51,7 +51,7 @@ Space complexity is usually confused with the **Auxiliary Space** used by an alg
 * **Space complexity** is the entire amount of space needed for an algorithm to run, based on the size of the input. It is the combination of Auxiliary space and the space utilized by input.
 
 ### Analysis of Loops
-Iterative loops play a significant role in building algorithms. Let's look at the commonly used forms before
+Iterative loops play a significant role in building algorithms. Let's look at the commonly used forms
 
 **O(1)**
 Complexity of a function is considered to be O(1) if there are no loops or recursions. Also, no calls to other loop including functions must be present.
