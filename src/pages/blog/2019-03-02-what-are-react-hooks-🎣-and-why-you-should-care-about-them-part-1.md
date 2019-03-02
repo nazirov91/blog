@@ -1,8 +1,8 @@
 ---
 templateKey: blog-post
 title: "What are React Hooks \U0001F3A3 and why you should care about them (Part 1)"
-date: '2019-03-02T18:03:57-05:00'
-description: "There is a new kid on the block \U0001F60E. React introduced a new feature called Hooks which will improve the code quality even more and make creating user interfaces easier."
+date: '2019-03-02T19:03:57-05:00'
+description: (~10mins)
 tags:
   - React
   - React Hooks
@@ -95,7 +95,7 @@ This is what supposed to happen: <br>
  
 We have a selected text variable, which is set to Banana by default. When we click on the Change button it changes the text from Banana to Apple or vice versa.
 
-Now, let us break down the new elements in the component.
+Now, let us break down the new elements in the component.<br>
 ![Component analysis](https://drive.google.com/uc?export=view&id=1HjEJexzPHMf5cS5I4AJp0EPilkfCWKAN)
 
 *What are those things in the state variable?* <br>
