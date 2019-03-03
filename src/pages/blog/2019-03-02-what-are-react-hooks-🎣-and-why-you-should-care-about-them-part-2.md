@@ -7,9 +7,10 @@ tags:
   - React
   - React Hooks
 ---
+![header](https://drive.google.com/uc?export=view&id=1l-FHunuytQsURlqEmDz7AO6OdHA-VTJL)
 * Required version of React: 16.8+
 
-1. [Part 1](https://blog.sardor.io/blog/2019-03-02-what-are-react-hooks-%F0%9F%8E%A3-and-why-you-should-care-about-them-part-2/) 
-2. [Part 2](https://blog.sardor.io/blog/2019-03-02-what-are-react-hooks-%F0%9F%8E%A3-and-why-you-should-care-about-them-part-1/)(This article)
+1. [Part 1](https://blog.sardor.io/blog/2019-03-02-what-are-react-hooks-%F0%9F%8E%A3-and-why-you-should-care-about-them-part-1/) 
+2. Part 2 (This article)
 
 ### Coming soon ...
