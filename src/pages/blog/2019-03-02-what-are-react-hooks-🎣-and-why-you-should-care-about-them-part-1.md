@@ -23,7 +23,7 @@ tags:
 6. TLDR
 
 ## Intro
-There is a new kid on the block 😎. React introduced a new feature called **Hooks** which will improve the code quality even more and make creating user interfaces easier. From now on, if you are going to create a new project, you should definitely take advantage of the new addition and keep your projects lean and clean. It was actually released a while ago, but production ready stable version came out recently. So now is the time to really start using them. In this article, we will cover the main concepts and look at some examples. At the end of the article, you will have a fair amount of idea about React Hooks and you can start implementing them in your applications.
+There is a new kid on the block 😎. React introduced a new feature called **Hooks** which will improve the code quality even more and make creating user interfaces easier. From now on, if you are going to create a new project, you should definitely take advantage of the new addition and keep your projects lean and clean. It was actually released a while ago, but production ready stable version has come out recently. So now is the time to really start using them. In this article, we will cover the main concepts and look at some examples. At the end of the article, you will have a fair amount of idea about React Hooks and you can start implementing them in your applications.
 
 Before we dive in to the details of hooks, let us take a step back to understand the motivation behind it.
 
