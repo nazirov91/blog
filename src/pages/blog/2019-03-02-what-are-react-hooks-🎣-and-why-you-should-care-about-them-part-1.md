@@ -12,7 +12,7 @@ tags:
 * Required version of React: 16.8+
 
 1. Part 1 (This article)
-2. Part 2
+2. [Part 2](https://blog.sardor.io/blog/2019-03-02-what-are-react-hooks-%F0%9F%8E%A3-and-why-you-should-care-about-them-part-2/)
 
 ### Outline
 1. Intro
@@ -321,7 +321,7 @@ function TitleMaster(){
 ### TLDR: 
 React hooks are special functions that can be used in stateless components. They allow us to hook into react features and add state management to the components. There are 3 main hooks: **useState, useEffect** and **useContext**. *useState* can replaces the current way of declaring state object in the constructor and manipulating values in it by using *this.setState()*. *useEffect* can be used instead of react lifecycles. These hooks are not meant to replace the current way of creating components. They are backwards compatible. No need to rewrite your existing components using hooks. They can make your projects much cleaner by letting you write less code though.
 
-## NEXT > [What are React Hooks 🎣 and why you should care about them (Part 2)](https://www.google.com)
+## NEXT > [What are React Hooks 🎣 and why you should care about them (Part 2)](https://blog.sardor.io/blog/2019-03-02-what-are-react-hooks-%F0%9F%8E%A3-and-why-you-should-care-about-them-part-2/)
 In Part 2 we will cover the following:
 * Context Hook
 * How to make custom hooks!
