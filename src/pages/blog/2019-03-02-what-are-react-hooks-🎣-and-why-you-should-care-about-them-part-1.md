@@ -27,6 +27,8 @@ There is a new kid on the block 😎. React introduced a new feature called **Ho
 
 Before we dive in to the details of hooks, let us take a step back to understand the motivation behind it.
 
+---
+
 ## What is wrong with React components now?
 **3 things**:
 1. Classes
@@ -66,9 +68,13 @@ Extreme level of nested component tree makes it difficult to follow the data flo
 #### 3. Big components
 Whether we like it or not, at some point of the development, our application gets large and requires  more complex components. When that happens, our components end up implementing multiple React lifecycles that might contain unrelated data. A single task can be split across different lifecycles. That creates an opportunity for bugs in the application.
 
+---
+
 ## Hooks to the rescue!
 Hooks solve all of the issues mentioned above. It does that by allowing us to add state management to *functional components* and use other React features. 
-*Say what?*
+
+*Say what?* 
+
 See, it is usually preferred to use just functions to create components. But as we mentioned above, we cannot manage the state or use lifecycles in our functions. But with the hooks we can!
 
 (If you are thinking, why not use Redux for state management, hold on to that thought. That's a discussion for another time.)
@@ -90,15 +96,18 @@ function FruitMaster(){
 	);
 }
 ```
-This is what supposed to happen: <br>
+This is what supposed to happen:
+
 ![Apple-Banana gif](http://g.recordit.co/iI2cjOIfVZ.gif)
  
 We have a selected text variable, which is set to Banana by default. When we click on the Change button it changes the text from Banana to Apple or vice versa.
 
-Now, let us break down the new elements in the component.<br>
+Now, let us break down the new elements in the component.
+
 ![Component analysis](https://drive.google.com/uc?export=view&id=1HjEJexzPHMf5cS5I4AJp0EPilkfCWKAN)
 
-*What are those things in the state variable?* <br>
+*What are those things in the state variable?*
+
 ![state-variable](https://drive.google.com/uc?export=view&id=1rbsk6dzjAABB7y8DKYlPG9_ysA8_pN2B)
 
 In this case, *setFruit()* is equivalent of **this.setState()**. There is one important difference though. When we use this.setState(), it merges the changes to the state object. State hook on the other hand, will completely **replace** the state with the given value.
@@ -145,12 +154,15 @@ export default class FruitMaster extends React.Component {
 }
 ```
 #### Comparison
+
 ![comparison](https://drive.google.com/uc?export=view&id=1ceAJnrksgsEKPM3Zuv0rBlrBIbSo2IZX)
 
 We can see from the picture that using hooks reduces code volume almost by half! 🎉
 
-Now, let us address the elephant in the room. *What do we do when we **have more than one variable in state**?*
+Now, let us address the elephant in the room. What do we do when we **have more than one variable in state**?*
+
 Simple! Create more state variables.
+
 ```js
 const [fruit, setFruit] = useState('Banana');
 const [food, setFood] = useState('Taco');
@@ -179,7 +191,7 @@ function FruitMaster(){
 ```
 ![fruit-lunch](http://g.recordit.co/ps8uo4r1l9.gif)
 
-*What if I want to store all variables in one object?*, you might ask. Well, go ahead. But one thing to remember is that, **state hook function replaces the state** and not merges to it. this.setState() merges the given values to the state object, hook function does not. But there is a way to fix it. Let us see how:
+*What if I want to store all variables in one object?* you might ask. Well, go ahead. But one thing to remember is that, **state hook function replaces the state** and not merges to it. this.setState() merges the given values to the state object, hook function does not. But there is a way to fix it. Let us see how:
 ```js
 import React, { useState } from 'react';
 
@@ -212,7 +224,9 @@ We have to use [spread operator](https://developer.mozilla.org/en-US/docs/Web/Ja
 
 ## Effect Hook
 *What about the lifeCycle methods of React? We could use those with classes. But now they are gone...*
+
 Not really.
+
 There is another hook called **useEffect** and we can use it instead of the lifecycles. In other words, we can handle side effects in our applications with hooks. (What is a [side effect](https://www.reddit.com/r/reactjs/comments/8avfej/what_does_side_effects_mean_in_react/)?)
 
 Here is an example of a component that uses familiar lifecycles:
@@ -317,6 +331,8 @@ function TitleMaster(){
     );
 }
 ```
+
+---
 
 ### TLDR: 
 React hooks are special functions that can be used in stateless components. They allow us to hook into react features and add state management to the components. There are 3 main hooks: **useState, useEffect** and **useContext**. *useState* can replaces the current way of declaring state object in the constructor and manipulating values in it by using *this.setState()*. *useEffect* can be used instead of react lifecycles. These hooks are not meant to replace the current way of creating components. They are backwards compatible. No need to rewrite your existing components using hooks. They can make your projects much cleaner by letting you write less code though.
