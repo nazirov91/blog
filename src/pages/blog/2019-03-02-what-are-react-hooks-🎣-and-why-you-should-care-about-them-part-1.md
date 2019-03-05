@@ -98,7 +98,7 @@ function FruitMaster(){
 ```
 This is what supposed to happen:
 
-![Apple-Banana gif](http://g.recordit.co/iI2cjOIfVZ.gif)
+![Apple-Banana gif](https://drive.google.com/uc?export=view&id=1te1_Gw1QQ-lfU_5DjlMhno0hTwgBACwn)
  
 We have a selected text variable, which is set to Banana by default. When we click on the Change button it changes the text from Banana to Apple or vice versa.
 
@@ -189,7 +189,7 @@ function FruitMaster(){
 	);
 }
 ```
-![fruit-lunch](http://g.recordit.co/ps8uo4r1l9.gif)
+![fruit-lunch](https://drive.google.com/uc?export=view&id=16AwnLVW_Jt3RjY2r5mI-b0mdgl6DjBOK)
 
 *What if I want to store all variables in one object?* you might ask. Well, go ahead. But one thing to remember is that, **state hook function replaces the state** and not merges to it. this.setState() merges the given values to the state object, hook function does not. But there is a way to fix it. Let us see how:
 ```js
@@ -263,7 +263,7 @@ class TitleMaster extends React.Component {
 }
 ```
 Our component in action. <br>
-![change-title-gif](http://g.recordit.co/IwdvmLXTXD.gif)
+![change-title-gif](https://drive.google.com/uc?export=view&id=1gKejaQNTHF0AJi644AKp-JNdT88Xp07L)
 
 The component is bulky even for a small functionality. Code in *componentDidMount* and *componentDidUpdate* is repeated.
 
