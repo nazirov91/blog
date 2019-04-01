@@ -7,6 +7,9 @@ tags:
   - React
   - React Hooks
 ---
+# What are React Hooks 🎣 and why you should care about them (Part 2)
+(~10mins)
+
 ![header](https://drive.google.com/uc?export=view&id=1l-FHunuytQsURlqEmDz7AO6OdHA-VTJL)
 
 * Required version of React: 16.8+
@@ -28,7 +31,7 @@ In the first part of the blog, we discussed the main concepts of React Hooks and
 ### What is a context?
 First of all, what is a context in React?
 
-**Context** is a way to share global data across components without passing props. Usually, data in React application is passed from parent to child through props. Sometimes we have some data that should be delivered to a component deep inside the component tree. It is painful to manually pass the same data over and over again through all components. Instead, we can create a central store that can be inserted into any component, just like in Redux.
+**Context** is a way to share global data across components without passing props. Usually, data in React application is passed from parent to child through props. Sometimes we have some data that should be delivered to a component deep inside the component tree. It is tedious to manually pass the same data over and over again through all components. Instead, we can create a central store that can be inserted into any component, just like in Redux.
 
 How about we see an example code without Context API and identify the need for using it.
 
@@ -62,7 +65,6 @@ const Customer = (props) => {
 	</div>
   );
 }
-
 ```
 
 ![header](https://drive.google.com/uc?export=view&id=1KV1kTZhzdwY0YsZ3HFgWUcny5WiZIPTF)
@@ -171,6 +173,7 @@ const Customer = () => {
 
 ![with-context-hook-happy](https://drive.google.com/uc?export=view&id=1nh-Co5DJpQLQPtMg8OflNAuvQ5dowei4)
 
+🔴 I know you could remove the line where you add the price to the cost of the banana and still get $2 at the end. But that is not the point. The point is that you have to do the *props drilling* when you don't use Context. Incrementing the price while passing the the components is sort of the cost to do the props drilling.
 
 ## Custom Hooks
 
@@ -319,6 +322,7 @@ const useTimer = () => {
 ```
 
 ![timer-with-custom-hook](https://drive.google.com/uc?export=view&id=1rlfsnUS2bfMgbN43Vmw-g-0u095sZ1uJ)
+
 
 In this case, we can place the hook in another file with other custom hooks and call it from anywhere in our project. Much cleaner and more reusable! 😃
 
@@ -554,3 +558,4 @@ We have covered most of the concepts about hooks and that should be enough for y
 
 #### Thanks for spending your time to read the article!
 
+## PREVIOUS > [What are React Hooks 🎣 and why you should care about them (Part 1)](https://blog.sardor.io/blog/2019-03-02-what-are-react-hooks-%F0%9F%8E%A3-and-why-you-should-care-about-them-part-1/)
