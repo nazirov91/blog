@@ -146,3 +146,7 @@ console.log(map.Sam.major);
 console.log(map['Sam']['major']);
 // Output: 'Biology'
 ```
+
+---
+
+Cheers
