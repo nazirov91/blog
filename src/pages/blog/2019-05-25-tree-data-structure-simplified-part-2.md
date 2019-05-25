@@ -15,7 +15,7 @@ tags:
 
 ![HEADER](https://drive.google.com/uc?export=view&id=1_oTUQFxdQCb-lgGOjrxW2ibzIrDe7vCT)
 
-- Part 1 
+- [Part 1](https://blog.sardor.io/blog/2019-05-25-tree-data-structure-simplified-part-1/) 
 - Part 2 (This article)
 
 ### Outline
@@ -258,4 +258,4 @@ Each node in a trie may have up to 26 children (English alphabet). And there mus
 In the worst case scenario, it can take up to $O(k)$ runtime to perform an **insertion** or a **lookup** in a trie. $k$ being the number of nodes. Space complexity can be as bad as $O(n*k)$. However, a trie is a great data structure to implement with applications that heavily rely on prefixes. It is even better than hash tables in this regard because hash tables cannot tell us if a string is a prefix of any word or not.
 
 
-## Previous < Tree Data Structure Simplified (Part  1)
+## Previous < [Tree Data Structure Simplified (Part  1)](https://blog.sardor.io/blog/2019-05-25-tree-data-structure-simplified-part-1/)
