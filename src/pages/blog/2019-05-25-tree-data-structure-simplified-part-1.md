@@ -15,7 +15,7 @@ tags:
 ![HEADER](https://drive.google.com/uc?export=view&id=1_oTUQFxdQCb-lgGOjrxW2ibzIrDe7vCT)
 
 - Part 1 (This article)
-- Part 2
+- [Part 2](https://blog.sardor.io/blog/2019-05-25-tree-data-structure-simplified-part-2/)
 
 Whether we know it or not, trees are everywhere: our computer file systems, HTML DOM, XML/Markup parsers, PDF format, computer chess games, compilers, and others heavily rely on the tree data structure. More practical examples are company hierarchies, family trees, or comments section of any posts. Trees are found to be tricky when implementing in applications and during the coding interviews.  How about we take a deep dive in the details of trees and learn the concepts in a more straightforward and fun way? In this article, we look at different types of trees and build a few of them from scratch to solidify our knowledge. Also, we use lots of visuals, which is the key to remembering. Let's get started!
 
@@ -273,4 +273,4 @@ postOrder(node){
 ### Summary
 A tree is a common non-linear data structure that is a part of the applications and devices we use on a daily basis. It can be an extremely efficient way of organizing data when implemented correctly. Furthermore, trees are often discussed in coding interviews, and interviewees find it to be challenging to utilize. In this article, we simplify the tree data structure by looking at it from a high level and getting into details to demystify the tricky concepts.
 
-## NEXT > Tree Data Structure Simplified (Part  2)
+## NEXT > [Tree Data Structure Simplified (Part  2)](https://blog.sardor.io/blog/2019-05-25-tree-data-structure-simplified-part-2/)
