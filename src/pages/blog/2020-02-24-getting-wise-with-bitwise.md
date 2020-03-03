@@ -85,6 +85,9 @@ In order to understand the binary, let's take a look at the decimal number 10
 
 ![\[BASE 10 pic\]](https://drive.google.com/uc?export=view&id=1r5OlXDaFDtoLSfhnsblJBFXf3lmjjDGE)
 
+(The $1^0$ in the first picture is supposed to be $10^0$. Sorry about that :) )
+
+
 This indicates that there are three digits 1, 2, and 3, and we start counting from the rightmost digit. We can see that **there are 3 ones, 2 tens and 1 hundred**. The placeholders start from 1 from the right side and increase by the power of 10 - 1s, 10s, 100s, 1000s and so on.
 
 #### Base 2 - Binary
