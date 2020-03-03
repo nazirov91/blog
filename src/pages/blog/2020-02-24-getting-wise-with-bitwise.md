@@ -171,10 +171,10 @@ How does it evaluate a collection of bits?
 The **AND** operation takes two bits and evaluates to 1 **only when both of the bits are 1**. The rest of the times, it evaluates to or returns 0.
 
 ```js
-0 | 0 -> 0
-0 | 1 -> 0
-1 | 0 -> 0
-1 | 1 -> 1
+0 & 0 -> 0
+0 & 1 -> 0
+1 & 0 -> 0
+1 & 1 -> 1
 ```
 
 How does it evaluate a collection of bits?
@@ -191,10 +191,10 @@ How does it evaluate a collection of bits?
 The **XOR** operation takes two bits and evaluates to 1 **only when exactly one of the bits is 1**. The rest of the times, it evaluates to or returns 0.
 
 ```js
-0 | 0 -> 0
-0 | 1 -> 1
-1 | 0 -> 1
-1 | 1 -> 0
+0 ^ 0 -> 0
+0 ^ 1 -> 1
+1 ^ 0 -> 1
+1 ^ 1 -> 0
 ```
 
 How does it evaluate a collection of bits?
