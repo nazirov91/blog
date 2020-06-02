@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: Git Basics
-date: '2020-06-02T12:02:31-04:00'
+date: '2019-10-01T12:02:31-04:00'
 description: >
   Git is a version control tool that allows to keep track of changes to files.
   It keeps record of changes to every single file: when it was changed, who
