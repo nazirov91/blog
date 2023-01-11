@@ -50,8 +50,14 @@ There are two main components of the .NET platform: **CLR** (Common Language Run
 
 The architecture of the .NET applications is relatively straightforward. At the root of all applications, there are **classes**. When we have a large number of classes connected together, we need a way to organize them. We use **Namespaces** for that purpose. A collection of namespaces is called **Assembly**, which is usually in the format of .EXE or .DLL (Dynamically Linked Library). An **application** is a collection of assemblies.
 
-[Architecture PIC]
+![.NET Core application architecture simple](https://drive.google.com/uc?export=view&id=1W2RbRiAnkOoSc7RFcTT61334NDXA2Ku9)
 
+Differences between EXE and DLL are as follows:
+**EXE**
+An exe always runs as a separate process and the purpose is to launch a separate application of its own.
+
+**DLL**
+A dll always needs a host exe to run. i.e., it can never run in its own address space. The purpose of a DLL is to have a collection of methods/classes which can be re-used from some other application. DLL is Microsoft's implementation of a shared library.
 
 ## Value Types and Expressions
 Before we start writing any code, please make sure that you have the latest version of [Visual Studio](https://visualstudio.microsoft.com/downloads/) IDE.
@@ -135,7 +141,7 @@ A class in C# has two major parts:
 Declaring a class
 
 ```csharp
-public Person
+public class Person
 {
 	// Fields
 	// Methods
@@ -143,7 +149,7 @@ public Person
 ```
 
 ```csharp
-public Person
+public class Person
 {
 	public string Name;
 	public void Greet()
