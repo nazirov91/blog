@@ -19,7 +19,7 @@
     "gatsby-remark-katex": "^1.0.14",
     "gatsby-remark-prismjs": "^2.0.5",
     "gatsby-source-filesystem": "^1.5.23",
-    "gatsby-transformer-remark": "^1.7.44",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^1.6.21",
     "lodash": "^4.17.13",
     "lodash-webpack-plugin": "^0.11.4",
